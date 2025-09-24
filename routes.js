@@ -12,7 +12,7 @@ router.get('/add/:num1/:num2', function (req, res) {
 router.get('/subtract/:num1/:num2', function (req, res) {
     var num1 = parseInt(req.params.num1)
     var num2 = parseInt(req.params.num2)
-    var difference = (num1 + num2).toString()
+    var difference = (num1 - num2).toString()
     res.json(difference)
   })
 
